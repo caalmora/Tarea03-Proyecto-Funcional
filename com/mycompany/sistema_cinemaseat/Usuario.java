@@ -10,7 +10,7 @@ package com.mycompany.sistema_cinemaseat;
  *
  * @author User
  */
-public abstract class Usuario {
+public class Usuario {
 
     private String user;       // Ej: "carlosp"
     private String nombre;     // Ej: "Carlos Pérez"
