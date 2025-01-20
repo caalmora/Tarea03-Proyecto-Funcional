@@ -69,7 +69,11 @@ public class Cine {
             System.out.println("\nClave debe ser numerica");
             return;
         }
+        // Este método autentica un usuario verificando su contraseña
+        // Si la contraseña es incorrecta, devuelve null
         Usuario clienteValido = usuarios.stream()
+            // Comparamos el usuario con los registrados
+             // y verificamos que la contraseña coincida
                 .filter(u -> u.getUser().equals(user)
                 && u.getContrasena() == pass
                 && (u instanceof Cliente))
@@ -98,7 +102,11 @@ public class Cine {
             System.out.println("\nClave debe ser numerica");
             return;
         }
+        // Este método autentica un usuario verificando su contraseña
+        // Si la contraseña es incorrecta, devuelve null
         Usuario adminValido = usuarios.stream()
+             // Comparamos el usuario con los registrados
+             // y verificamos que la contraseña coincida
                 .filter(u -> u.getUser().equals(user)
                 && u.getContrasena() == pass
                 && (u instanceof Administrador))
